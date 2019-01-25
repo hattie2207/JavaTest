@@ -1,0 +1,108 @@
+import java.util.Scanner;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Player {
+
+	Scanner userInput = new Scanner(System.in);
+	String direction, outputMessage; 
+	double distance;
+	int pointX = 0; 
+	int pointY = 0;
+	int randX, randY;
+
+
+	public void play() {
+
+		randomPoint();
+		//		playerMove();
+
+
+	}
+
+	public void playerMove() {
+
+		if (userInput.hasNext()) {
+
+			if (userInput.hasNextLine()) {
+
+				direction = userInput.nextLine();	
+				checkInput(direction);
+			}
+		}		
+	}
+
+	public void checkInput(String direction) {		
+
+		direction = direction.toLowerCase();
+
+		switch(direction) {
+
+		case "n":
+			direction = "north";
+			break;
+		case "s":
+			direction = "south";
+			break;
+		case "e":
+			direction = "east";
+			break;
+		case "w":
+			direction = "west";
+			break;
+		}
+
+		if (direction.equals("north") || direction.equals("south") || direction.equals("east") || direction.equals("west")) {							
+			System.out.println("Valid Move");
+			magicCompass(direction);
+		}					
+		else {
+			System.out.println("Invalid input, please try again."); 
+			playerMove();
+		}
+
+	}
+
+	public void randomPoint() {
+
+		randX = ThreadLocalRandom.current().nextInt(-3, 3);
+		randY = ThreadLocalRandom.current().nextInt(-3, 3);
+		System.out.println(randX + " " + randY);
+
+		if (randX == 0 || randY == 0) {
+			randomPoint();
+		}
+
+	}
+
+	public void totalDistance() {
+
+		distance = Math.sqrt(Math.pow(randX, pointX) + Math.pow(randY, pointY));		
+
+	}
+
+	public void magicCompass(String direction) {
+
+		if (direction.equals("north")) {	
+
+			pointY += 1; 
+			totalDistance();
+			System.out.println("The dial reads '" + distance + "m'\n>");
+			playerMove();			
+
+		}
+		else if (direction.equals("south")) {
+
+		}
+		else if (direction.equals("east")) {
+
+		}
+		else if (direction.equals("east")) {
+
+		}
+		else {
+
+		}
+
+	}	
+
+}

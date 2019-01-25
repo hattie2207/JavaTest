@@ -1,0 +1,6 @@
+
+public class Point {
+	
+	private x, y;
+
+}
