@@ -12,13 +12,9 @@ public class AdvantureGame {
 	public void play() {
 
 		randomPoint();
-		System.out.println("-----------------------------------------------------");
-		System.out.println("    Welcome to Infinite Terrain Advanture Game!");
-		System.out.println("-----------------------------------------------------");
 		System.out.println("What level of adventure would you like to experience?"
 				+ "\nPlease enter \"easy\", \"intermediate\", or \"advance\".");
 		getLevel();
-		System.out.println("");
 		System.out.println("Grey foggy clouds float oppressively close to you,\r\n" + 
 				"reflected in the murky grey water which reaches up your shins.\r\n" + 
 				"Some black plants barely poke out of the shallow water.\r\n" + 
