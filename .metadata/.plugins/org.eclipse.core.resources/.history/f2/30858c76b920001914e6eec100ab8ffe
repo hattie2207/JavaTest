@@ -17,7 +17,6 @@ public class AdvantureGame {
 		System.out.println("-----------------------------------------------------");
 		System.out.println("What level of adventure would you like to experience?"
 				+ "\nPlease enter \"easy\", \"intermediate\", or \"advance\".");
-		System.out.print(">");
 		getLevel();
 		System.out.println(".*.................../&&%............,,,..,,.......,(*,(%#(\r\n" + 
 				",*,................(&&...............,*,..*.....,**,**/(#(/\r\n" + 

@@ -16,8 +16,7 @@ public class AdvantureGame {
 		System.out.println("    Welcome to Infinite Terrain Advanture Game!");
 		System.out.println("-----------------------------------------------------");
 		System.out.println("What level of adventure would you like to experience?"
-				+ "\nPlease enter \"easy\", \"intermediate\", or \"advance\".");
-		System.out.print(">");
+				+ "\nPlease enter \"easy\", \"intermediate\", or \"advance\".\n>");
 		getLevel();
 		System.out.println(".*.................../&&%............,,,..,,.......,(*,(%#(\r\n" + 
 				",*,................(&&...............,*,..*.....,**,**/(#(/\r\n" + 

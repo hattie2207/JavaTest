@@ -17,7 +17,6 @@ public class AdvantureGame {
 		System.out.println("-----------------------------------------------------");
 		System.out.println("What level of adventure would you like to experience?"
 				+ "\nPlease enter \"easy\", \"intermediate\", or \"advance\".");
-		System.out.print(">");
 		getLevel();
 		System.out.println(".*.................../&&%............,,,..,,.......,(*,(%#(\r\n" + 
 				",*,................(&&...............,*,..*.....,**,**/(#(/\r\n" + 
@@ -40,7 +39,7 @@ public class AdvantureGame {
 				"((((((#%%%%%((###(((((((((((##(((((##%(((((((((##((((##((((\r\n" + 
 				"((((###%%%%%##((((((((##(##((#((((((#%#((((((##%##((((#####\r\n" + 
 				"((#((##%%%%%##%(#(((((#%(####((((((((((######%%((##(((((###\r\n" + 
-				"###((#%%%%%#%######(##((#(#%((((((((((((((##%##############\n");
+				"###((#%%%%%#%######(##((#(#%((((((((((((((##%##############");
 		System.out.println("Grey foggy clouds float oppressively close to you,\r\n" + 
 				"reflected in the murky grey water which reaches up your shins.\r\n" + 
 				"Some black plants barely poke out of the shallow water.\r\n" + 
