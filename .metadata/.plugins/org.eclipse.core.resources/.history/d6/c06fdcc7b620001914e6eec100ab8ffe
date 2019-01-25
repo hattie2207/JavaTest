@@ -41,55 +41,6 @@ public class Player {
 
 	}
 	
-	private void getLevel() {
-
-		if (levelInput.hasNextLine()){
-
-			gameLevel = levelInput.nextLine();
-			checkLevel();
-
-		}			
-	}
-
-	private void checkLevel() {
-		
-		gameLevel = gameLevel.toLowerCase();
-
-		switch(gameLevel) {
-
-		case "e":
-			gameLevel = "easy";
-			break;
-		case "i":
-			gameLevel = "intermediate";
-			break;
-		case "a":
-			gameLevel = "advance";
-			break;		
-		}
-
-		if (gameLevel.equals("easy") || gameLevel.equals("intermediate") || gameLevel.equals("advance")) {
-			
-			switch(gameLevel) {
-
-			case "easy":
-				break;
-			case "intermediate":
-				randX += 5;
-				randY += 5;
-				break;
-			case "advance":
-				randX += 10;
-				randY += 10; 
-				break;		
-			}
-		}
-		else {
-			System.out.println("Invalid level input, please try again.\n>"); 
-			getLevel();
-		}
-	}	
-	
 	private void totalDistance() {
 
 		distance = Math.sqrt((Math.pow(randX - pointX, 2)) + (Math.pow(randY - pointY, 2)));		
