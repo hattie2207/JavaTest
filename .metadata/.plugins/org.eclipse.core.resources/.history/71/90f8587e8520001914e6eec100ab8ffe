@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Player {
+	
+	Scanner userInput = new Scanner(System.in);
+	
+	private void checkInput() {
+		if (userInput.hasNextLine()) {
+			
+		}
+	}
+	
+	public static String magicCompass(String direction) {
+		
+		
+		
+		return "";
+	}
+
+}

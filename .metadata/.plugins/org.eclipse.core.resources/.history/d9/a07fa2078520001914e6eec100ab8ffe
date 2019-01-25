@@ -1,0 +1,11 @@
+
+public class Player {
+	
+	public static String magicCompass(String direction) {
+		
+		
+		
+		return "";
+	}
+
+}

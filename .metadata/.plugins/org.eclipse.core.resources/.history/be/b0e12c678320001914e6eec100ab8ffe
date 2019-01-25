@@ -1,0 +1,12 @@
+
+public class GameMain {
+	
+	protected static void intro() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

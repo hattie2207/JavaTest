@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Player {
+
+	Scanner userInput = new Scanner(System.in);
+	String direction; 
+	float distance; 
+
+	public void play() {
+
+		playerMove();
+//		System.out.println(direction);
+		magicCompass(direction);
+
+	}
+
+	public void playerMove() {
+
+		if (userInput.hasNext()) {
+
+			if (userInput.hasNextLine()) {
+				
+				direction = userInput.nextLine();	
+				checkInput(String direction);
+			}
+		}		
+	}
+	
+	public void checkInput() {
+		
+		switch(direction)
+		
+		if (direction.equals("north") || direction.equals("south") || direction.equals("east") || direction.equals("west")) {							
+			System.out.println("Valid Move");
+		}					
+		else {
+			System.out.println("Invalid input, please try again."); 
+			playerMove();
+		}
+		
+	}
+
+	public String magicCompass(String direction) {
+		
+		
+
+		return "";
+	}
+
+}

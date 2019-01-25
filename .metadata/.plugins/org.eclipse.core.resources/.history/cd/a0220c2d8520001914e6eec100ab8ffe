@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Player {
+	
+	Scanner userInput = new Scanner(System.in);
+	
+	public static String magicCompass(String direction) {
+		
+		
+		
+		return "";
+	}
+
+}
