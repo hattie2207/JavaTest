@@ -41,12 +41,6 @@ public class Player {
 
 	}
 	
-	private void totalDistance() {
-
-		distance = Math.sqrt((Math.pow(randX - pointX, 2)) + (Math.pow(randY - pointY, 2)));		
-
-	}
-	
 	private void playerMove() {
 
 		if (userInput.hasNextLine()) {
